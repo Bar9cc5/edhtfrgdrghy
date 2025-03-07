@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(images.jpg); /* Светлый фон */
+    font-family: 'Pacifico', cursive; /* Рукописный шрифт */
+    background-size: cover;
+}
+
+.card {
+    background-color: #ffffff; /* Цвет фона валентинки */
+    border-radius: 20px; /* Закругление углов */
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Тень для эффекта глубины */
+    text-align: center;
+    width: 300px; /* Ширина валентинки */
+    position: relative;
+}
+
+.heart {
+    font-size: 5em; /* Размер сердца */
+    color: #ff4081; /* Цвет сердца */
+    animation: heartbeat 1s infinite; /* Анимация пульсации */
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.message {
+    font-size: 1.5em; /* Размер текста сообщения */
+    color: #d50000; /* Цвет текста сообщения */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.button {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 10px 20px; /* Внутренние отступы */
+    background-color: #ff4040; /* Цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    border: none; /* Без границы */
+    border-radius: 10px; /* Закругление углов кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    font-size: 1em; /* Размер текста на кнопке */
+    transition: background-color 0.3s; /* Плавный переход для фона кнопки */
+}
+
+.button:hover {
+    background-color: #d50000; /* Цвет кнопки при наведении */
+}
